@@ -4,7 +4,7 @@ import { AppBar, Toolbar, IconButton, List, ListItem, ListItemText, makeStyles, 
 import { Home } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
-export const useStyles = makeStyles({
+const useStyles = makeStyles({
     navbarDisplayFlex: {
         display: "flex",
         justifyContent: "space-between"

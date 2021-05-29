@@ -6,5 +6,4 @@ type LinkType = {
 export const navLinks: LinkType[] = [
     { title: "Domů", path: "/" },
     { title: "Projekty", path: "/projects"},
-    { title: "O mně", path: "/about"}
 ]
