@@ -17,6 +17,12 @@ const useStyles = makeStyles({
         textDecoration: "none",
         textTransform: "uppercase",
         color: "white"
+    },
+    iconButton: {
+        padding: 0
+    },
+    image: {
+        height: "50px"
     }
 });
 
@@ -27,9 +33,10 @@ const Bar: FC = () => {
         <AppBar position="static">
             <Toolbar>
                 <Container maxWidth="md" className={classes.navbarDisplayFlex}>
-                    <IconButton edge="start" color="inherit" aria-label="menu">
+                    <IconButton edge="start" color="inherit" aria-label="menu" className={classes.iconButton}>
                         <Link to="/" style={{color: "white"}}>
-                            <Home />
+                            {/* <Home /> */}
+                            <img src="/logo192.png" className={classes.image} />
                         </Link>
                     </IconButton>
                     <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
