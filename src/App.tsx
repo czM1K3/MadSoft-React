@@ -3,9 +3,9 @@ import React, { FC } from 'react';
 // import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-import { Main } from './components/main';
-import { About } from './components/about';
-import { NotFound } from './components/not-found';
+import Main from './pages/Main';
+import About from './pages/About';
+import NotFound from './pages/NotFound';
 
 const App: FC = () => {
   return (
