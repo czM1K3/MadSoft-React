@@ -27,11 +27,11 @@ const Bar: FC = () => {
         <AppBar position="static">
             <Toolbar>
                 <Container maxWidth="md" className={classes.navbarDisplayFlex}>
-                        <IconButton edge="start" color="inherit" aria-label="menu">
-                    <Link to="/" style={{color: "white"}}>
+                    <IconButton edge="start" color="inherit" aria-label="menu">
+                        <Link to="/" style={{color: "white"}}>
                             <Home />
-                    </Link>
-                        </IconButton>
+                        </Link>
+                    </IconButton>
                     <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
                         { navLinks.map(({ title, path }) => (
                             <Link to={path} key={title} className={classes.linkText}>
