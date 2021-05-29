@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
-        color: "white"
+        color: "white",
+        fontWeight: "bold"
     },
     large: {
         width: theme.spacing(17),
