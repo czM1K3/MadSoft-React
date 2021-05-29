@@ -15,20 +15,25 @@ const useStyles = makeStyles({
         transform: "translate(-50%, -50%)",
         color: "white",
         fontWeight: "bold"
-    }    
+    },
+    background: {
+        backgroundColor: "#292c34"
+    }
 });
 
 const Main: FC = () => {
     const classes = useStyles();
     return (
         <>
-            <Parallax blur={5} bgImage="/static/img/coding.webp" bgImageAlt="Coding background" >
-                <div className={classes.bigContainer}>
-                    <Typography variant="h1" className={classes.header}>
-                        MadSoft
-                    </Typography>
-                </div>
-            </Parallax>
+            <div className={classes.background}>
+                <Parallax blur={5} bgImage="/static/img/coding.webp" bgImageAlt="Coding background" >
+                    <div className={classes.bigContainer}>
+                        <Typography variant="h1" className={classes.header}>
+                            MadSoft
+                        </Typography>
+                    </div>
+                </Parallax>
+            </div>
             <Suspense fallback={<h2>Načítání...</h2>}>
                 <Lazy />
             </Suspense>
