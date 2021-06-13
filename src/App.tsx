@@ -7,6 +7,7 @@ import { Footer } from './components/footer';
 import Main from './pages/Main';
 import NotFound from './pages/NotFound';
 import Projects from './pages/Projects';
+import Memes from './pages/Memes';
 
 const App: FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: FC = () => {
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/projects" component={Projects} />
+          <Route path="/memes" component={Memes} />
           <Route component={NotFound} />
         </Switch>
         <Footer />
