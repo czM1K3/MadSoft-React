@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { VideoType} from "./videos";
+import { VideoType } from "./videos-arr";
 import Plyr from "plyr-react";
 import { Typography, Button, makeStyles } from "@material-ui/core";
 

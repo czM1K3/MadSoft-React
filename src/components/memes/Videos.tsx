@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Video from "./Video";
-import { videos } from "./videos"
+import { videos } from "./videos-arr"
 import { useLocation } from "react-router-dom";
 
 import "plyr-react/dist/plyr.css"

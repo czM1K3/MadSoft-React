@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import { GridList, GridListTile, GridListTileBar } from "@material-ui/core";
-import { projects } from "./projects";
+import { projects } from "./projects-arr";
 
 
 const useStyles = makeStyles((theme: Theme) =>
