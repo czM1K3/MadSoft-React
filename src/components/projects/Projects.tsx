@@ -25,7 +25,9 @@ const useStyles = makeStyles((theme: Theme) =>
         "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
     },
     image: {
-      objectFit: "fill",
+      objectFit: "cover",
+      width: "100%",
+      height: "100%",
     }
   }),
 );
@@ -37,8 +39,8 @@ const Projects: FC = () => {
             <GridList className={classes.gridList} cols={2.5}>
                 {projects.map((tile) => (
                 <GridListTile key={tile.img}>
-                    <img src={tile.img} alt={tile.name} className={classes.image} />
                     <a href={tile.url}>
+                      <img src={tile.img} alt={tile.name} className={classes.image} />
                       <GridListTileBar
                       title={tile.name}
                       classes={{
